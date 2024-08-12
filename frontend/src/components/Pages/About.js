@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import caram from "../image/caram.png";
 import chech from "../image/chech.png";
 import circle from "../image/circle.png";
+import dog from "../image/dog.png";
 import games from "../image/game.png";
 import garden from "../image/garden.png";
 import map from "../image/map.png";
@@ -192,8 +193,79 @@ const About = () => {
         <h2>Villa Rates</h2>
         <hr className='hr'/>
       </div>
-      <div className='table.content'>
-        <h2>Swaru </h2>
+      <div className='table-content'>
+        <h2>Swaru (With Private Lawn)</h2>
+      </div>
+      <div className='table-content1'>
+        <table>
+          <tr>
+            <th>Day / Rate</th>
+            <th>No.Of Guests</th>
+            <th>Rate Per Day</th>
+          </tr>
+          <tr>
+            <td>Weekdays
+            (Mon-Thu)</td>
+            <td>2-4</td>
+            <td>5000/- +GST</td>
+          </tr>
+          <tr>
+            <td>Weekends
+            (Fri-Sun)</td>
+            <td>2-4</td>
+            <td>5500/- +GST</td>
+          </tr>
+        </table>
+      </div>
+      <hr/>
+      <div className='table-content'>
+        <p>*Rate As Per Day</p>
+        <h2>Swaru (With Outdoor Lawn)</h2>
+      </div>
+      <div className='table-content1'>
+        <table>
+          <tr>
+            <th>Day / Rate</th>
+            <th>No.Of Guests</th>
+            <th>Rate Per Day</th>
+          </tr>
+          <tr>
+            <td>Weekdays
+            (Mon-Thu)</td>
+            <td>2-4</td>
+            <td>5000/- +GST</td>
+          </tr>
+          <tr>
+            <td>Weekends
+            (Fri-Sun)</td>
+            <td>2-4</td>
+            <td>5500/- +GST</td>
+          </tr>
+        </table>
+      </div>
+      <hr/>
+      <div className='per-Day'>
+        <p>TamhiniGhat,GoldValley, Sanaswadi, <br/>
+        Maharashtra 402120</p>
+        <hr className='hr'/>
+      </div>
+      <div className='per-day1'>
+        <img src={dog} alt=''></img>
+        <div className='per-day2'>
+        <p>1. Meals are not included in the above rates.</p>
+        <p>2. Additional guests can be accommodated
+            with an extra charge of Rs. 650/- per
+            person per day.
+        </p>
+        <p>3. Child (upto 4 years) no charges 6-11 Y - 500
+            per child above 11Y adult charges applicable
+        </p>
+        <p>4. Pets are allowed with Pet fee of Rs-500</p>
+        <p>5. Our villa has capacity to accommodate group
+          of 15 people easily.</p>
+          <p>6. The above rates are not applicable for Diwali/
+          Xmas/New Year/Special holidays.</p>
+      </div>
       </div>
     </>
   );

@@ -1,12 +1,11 @@
-import '..style/Contact.css';
 import React from 'react';
+import '../style/BookingForm.css';
 
-const Contact = ({ closeModal }) => {
+const BookingForm = ({ closeModal }) => {
   return (
     <div className="modal-background">
       <div className="modal-content">
-        <button className="close-btn" onClick={closeModal}>×</button>
-        <h2>Login</h2>
+        <h2>Villa Booking Form</h2>
         <form>
           <div className="form-group">
             <label>Name:</label>
@@ -17,18 +16,23 @@ const Contact = ({ closeModal }) => {
             <input type="email" placeholder="Enter your email" required />
           </div>
           <div className="form-group">
-            <label>Phone Number:</label>
-            <input type="tel" placeholder="Enter your phone number" required />
+            <label>Check-in Date:</label>
+            <input type="date" required />
           </div>
           <div className="form-group">
-            <label>Password:</label>
-            <input type="password" placeholder="Enter your password" required />
+            <label>Check-out Date:</label>
+            <input type="date" required />
           </div>
-          <button type="submit">Login</button>
+          <div className="form-group">
+            <label>No. of Guests:</label>
+            <input type="number" min="1" required />
+          </div>
+          <button type="submit">Submit</button>
+          <button type="button" onClick={closeModal} className="close-btn">Close</button>
         </form>
       </div>
     </div>
   );
 }
 
-export default Contact;
+export default BookingForm;

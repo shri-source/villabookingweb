@@ -1,0 +1,140 @@
+.galery{
+    padding-top: 90px;
+}
+.galery p{
+    font-size: 28px;
+}
+.galery h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 48px;
+    color: #3e2f20;
+    padding: 20px 40px;
+    background-color: #c2ae9e;
+    display: inline-block;
+    position: relative;
+    margin: 0px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 80%, 80% 90%, 70% 80%, 60% 90%, 50% 80%, 40% 90%, 30% 80%, 20% 90%, 10% 80%, 0 90%);
+}
+
+.hr1{
+    width: 50%;
+    height: 4px;
+    justify-content: center;
+    margin: 12px auto;
+    background-color: orange;
+  }
+
+  /* Gallery.css */
+.galery-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+    overflow: hidden;
+  }
+  
+  .galery-img {
+    width: 70%;
+    height: 90%;
+  }
+  
+  .left-arrow, .right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+  
+  .left-arrow:hover, .right-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+.galery-1 img{
+    width: 300px;
+    height: 250px;
+    cursor: pointer;
+    box-shadow: 5px 5px 9px black;
+}
+.galery-1 {
+    display: flex;
+    margin: 50px;
+    gap: 20px;
+}
+.galery-2 img{
+    width: 300px;
+    height: 250px;
+    box-shadow: 5px 5px 9px black;
+    cursor: pointer;
+}
+.galery-2 {
+    display: flex;
+    margin: 50px;
+    gap: 20px;
+}
+.galery-3 img{
+    width: 300px;
+    height: 250px;
+    box-shadow: 5px 5px 9px black;
+    cursor: pointer;
+}
+.galery-3 {
+    display: flex;
+    margin: 50px;
+    gap: 20px;
+}
+
+/* Gallery.css */
+/* Gallery.css */
+.galery-1, .galery-2, .galery-3 {
+    display: flex;
+    margin-left: 30px;
+    gap: 20px; /* Optional: Adds space between images */
+    margin-bottom: 20px; /* Optional: Adds space between rows */
+  }
+  
+  .galery-1 img, .galery-2 img, .galery-3 img {
+    cursor: pointer;
+    margin-left: 25px;
+    width: 250px; /* Default width */
+    height: 200px; /* Default height */
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    overflow: hidden; /* Ensures no scrollbar */
+  }
+  
+  .modal-img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto; /* Adjust width to fit within modal */
+    height: auto; /* Adjust height to fit within modal */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
