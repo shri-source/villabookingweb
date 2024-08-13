@@ -131,3 +131,14 @@
 .foot{
   margin-top: 40px;
 }
+.contact-item{
+  padding: 7px;
+}
+@media only screen and (max-width: 480px){
+  .contact{
+    display: block;
+  }
+  .contact-item{
+    margin-top: 10px;
+  }
+}

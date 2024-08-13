@@ -235,3 +235,81 @@
     cursor: pointer;
     transform: scale(1.1);
   }
+
+  @media only screen and (max-width: 480px){
+    .about h1{
+        font-size: 25px;
+    }
+    .about p{
+        font-size: 20px;
+    }
+    .outdoors{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .thing-to p{
+        font-size: 20px;
+    }
+    .games{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .games-item img{
+        width: 200px;
+    }
+    .info p{
+        font-size: 20px;
+    }
+    .info-item{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .p{
+        font-size: 29px;
+    }
+    .info-item2 p{
+        font-size: 20px;
+    }
+    .garden{
+        width: 250px;
+    }
+    .check{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .check img{
+        width: 300px;
+    }
+    .check p{
+        font-size: 20px;
+    }
+    .table p{
+        font-size: 22px;
+    }
+    .table h2{
+        font-size: 22px;
+    }
+    .table-content h2{
+        font-size: 22px;
+    }
+    .table-content1 tr th{
+        padding: 0px;
+        font-size: 20px;
+    }
+    .table-content1 td{
+        font-size: 17px;
+    }
+    .per-Day p{
+        font-size: 19px;
+    }
+    .per-day1{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .per-day1 img{
+        width: 260px;
+    }
+
+
+  }
+  

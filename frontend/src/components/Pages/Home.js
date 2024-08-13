@@ -1,4 +1,6 @@
 import React from "react";
+import { FaWhatsapp } from "react-icons/fa";
+import Saruvideo from "../Assets/Saruvideo.mp4";
 import bath from "../image/bath.png";
 import bed from "../image/bed.png";
 import bhira from "../image/bhira.png";
@@ -66,6 +68,14 @@ const Home = () => {
           </div>
           <span>Happy To Help You!</span>
         </div>
+        <a  
+              href="https://wa.me/8237330306" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="whatsapp-icon"
+            >
+            <FaWhatsapp />
+            </a>
       </div>
     </div>
     <hr />
@@ -124,6 +134,10 @@ const Home = () => {
 <br/> the spacious haven.</p>
     </div>
     <hr />
+    <video className="video" width="1200" height="500" controls autoPlay loop preload="auto" muted>
+        <source src={Saruvideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     <div className="attract-item">
       <h1>Nearby Attractions</h1>
       <hr className="hr1"/>

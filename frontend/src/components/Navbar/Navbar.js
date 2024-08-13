@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import villa from "../image/villa.png";
+import villas from '../Assets/villa.pdf';
+import logo from "../image/logo.jpg";
 import BookingForm from '../Pages/BookingForm.jsx';
 import LoginForm from '../Pages/LoginForm.jsx';
 import './Navbar.css';
@@ -8,29 +9,24 @@ import './Navbar.css';
 const Navbar = () => {
   const [isBookingFormOpen, setBookingFormOpen] = useState(false);
   const [isLoginFormOpen, setLoginFormOpen] = useState(false);
-  const openBookingForm = () => {
-    setBookingFormOpen(true);
-  };
+  const [isNavOpen, setNavOpen] = useState(false);
 
-  const closeBookingForm = () => {
-    setBookingFormOpen(false);
-  };
-
-  const openLoginForm = () => {
-    setLoginFormOpen(true);
-  };
-
-  const closeLoginForm = () => {
-    setLoginFormOpen(false);
-  };
+  const openBookingForm = () => setBookingFormOpen(true);
+  const closeBookingForm = () => setBookingFormOpen(false);
+  const openLoginForm = () => setLoginFormOpen(true);
+  const closeLoginForm = () => setLoginFormOpen(false);
+  const toggleNav = () => setNavOpen(!isNavOpen);
 
   return (
     <>
       <div className='navbar'>
         <div className='navbar-brand'>
-          <img src={villa} alt='Brand' className='navbar-logo' />
+          <img src={logo} alt='Brand' className='navbar-logo' />
+          <button className='navbar-toggle' onClick={toggleNav}>
+            {isNavOpen ? '✖' : '☰'}
+          </button>
         </div>
-        <ul className='navbar-list'>
+        <ul className={`navbar-list ${isNavOpen ? 'navbar-list-open' : ''}`}>
           <li className='navbar-item'>
             <Link className='navbar-link' to="/">Home</Link>
           </li>
@@ -44,13 +40,15 @@ const Navbar = () => {
             <Link className='navbar-link' to="/gallery">Gallery</Link>
           </li>
           <li className='navbar-item'>
-            <Link className='navbar-link' to="/services">Services</Link>
-          </li>
-          <li className='navbar-item'>
             <button className='navbar-btn' onClick={openBookingForm}>Book Now</button>
           </li>
           <li className='navbar-item'>
-            <Link className='navbar-btn'  onClick={openLoginForm}><button>Login</button></Link>
+            <button className='navbar-btn' onClick={openLoginForm}>Login</button>
+          </li>
+          <li className='navbar-item'>
+            <button className='download'>
+              <a href={villas} download="villa.pdf">Download PDF</a>
+            </button>
           </li>
         </ul>
       </div>

@@ -313,3 +313,174 @@ box-shadow: 5px 5px 9px pink;
 .local h1{
   font-size: 50px;
 }
+
+.whatsapp-icon{
+  font-size: 60px;
+  color: green;
+  margin-left: 160px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .content h1 {
+    font-size: 30px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .sub-div h1 {
+    font-size: 20px;
+  }
+
+  .table-list, .table-list1 {
+    max-width: 100px;
+  }
+
+  .flex-item img {
+    width: 20px;
+  }
+
+  .whatsapp-icon {
+    font-size: 28px;
+  }
+
+  .near-item1 h1 {
+    font-size: 20px;
+  }
+
+  .near-item1 p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .content h1 {
+    font-size: 24px;
+  }
+
+  .header {
+    margin-top: 100px;
+  }
+
+  .host-item p{
+    font-size: 19px;
+  }
+
+  .host-item h1{
+    font-size: 20px;
+  }
+  .img-contain{
+    flex-direction: column;
+    margin: 0px;
+    gap: 0px;
+  }
+  .img-contain img{
+    width: 200px;
+  }
+
+  .img-contain a{
+    margin-left: 0px;
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .table-item{
+    flex-direction: column;
+  }
+  .table-list{
+    width: 150px;
+    height: 150px;
+    padding: 9px 50px;
+    margin: 0px;
+    gap: 15px;
+  }
+  .table-list img{
+    width: 60px;
+    height: 50px;
+  }
+  .table-item1{
+    flex-direction: column;
+    margin: 0px;
+  }
+  .table-list1{
+    width: 150px;
+    height: 150px;
+    padding: 9px 50px;
+    margin-left: 0px;
+    gap: 15px;
+  }
+  .table-list1 img{
+    width: 60px;
+    height: 50px;
+
+  }
+  .p-text{
+    font-size: 17px;
+    margin: 0px;
+    margin-top: 25px;
+  }
+
+  .video{
+    width: 300px;
+    margin: 0px;
+  }
+  .attract-item h1{
+    font-size: 27px;
+  }
+
+  .near-item {
+    flex-direction: column;
+    
+    gap: 0px;
+  }
+  .near-item1 img{
+    width: 200px;
+  }
+  .near-item1{
+    margin: 0px;
+  }
+  .local h1{
+    font-size: 24px;
+  }
+  .local-item {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .sub-div h1 {
+    font-size: 18px;
+  }
+
+  .table-list, .table-list1 {
+    max-width: 80px;
+  }
+
+  .flex-item img {
+    width: 18px;
+  }
+
+  .whatsapp-icon {
+    font-size: 24px;
+  }
+
+  .near-item1 h1 {
+    font-size: 18px;
+  }
+
+  .near-item1 p {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .content h1 {
+    font-size: 24px; 
+  }
+}
