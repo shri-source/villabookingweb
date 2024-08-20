@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import villas from '../Assets/villa.pdf';
-import logo from "../image/logo.jpg";
+import Swaru from "../image/Swaru (3).png";
 import BookingForm from '../Pages/BookingForm.jsx';
 import LoginForm from '../Pages/LoginForm.jsx';
 import './Navbar.css';
@@ -21,7 +21,7 @@ const Navbar = () => {
     <>
       <div className='navbar'>
         <div className='navbar-brand'>
-          <img src={logo} alt='Brand' className='navbar-logo' />
+          <img src={Swaru} alt='Brand' className='navbar-logo' />
           <button className='navbar-toggle' onClick={toggleNav}>
             {isNavOpen ? '✖' : '☰'}
           </button>
@@ -34,13 +34,16 @@ const Navbar = () => {
             <Link className='navbar-link' to="/about">About</Link>
           </li>
           <li className='navbar-item'>
+            <Link className='navbar-link' to="/services">Services</Link>
+          </li>
+          <li className='navbar-item'>
             <Link className='navbar-link' to="/contact">Contact</Link>
           </li>
           <li className='navbar-item'>
             <Link className='navbar-link' to="/gallery">Gallery</Link>
           </li>
           <li className='navbar-item'>
-            <button className='navbar-btn' onClick={openBookingForm}>Book Now</button>
+            <Link className='navbar-btn' to="/book-now" onClick={openBookingForm}>Book Now</Link>
           </li>
           <li className='navbar-item'>
             <button className='navbar-btn' onClick={openLoginForm}>Login</button>

@@ -1,10 +1,18 @@
-const express = require('express')
-const app = express();
+require('dotenv').config(); 
 
-app.get('/',(req,res)=>{
-    res.send("App is working .....")
-})
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
+const client = require('twilio')(accountSid, authToken);
 
-app.listen(5000,()=>{
-    console.log("server is running on 5000 port ")
-})
+(async () => {
+    try {
+        const message = await client.messages.create({
+            body: 'Hello there',
+            from: 'whatsapp:+14155238886',
+            to: 'whatsapp:+919370653498'
+        });
+        console.log('Message SID:', message.sid);
+    } catch (error) {
+        console.error('Error sending message:', error);
+    }
+})();
