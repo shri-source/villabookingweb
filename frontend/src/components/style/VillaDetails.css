@@ -1,0 +1,83 @@
+.villa-details {
+    padding-top: 80px;
+  }
+  
+  .images {
+    width: 50%;
+    gap: 40px;
+    margin: 50px;
+    display: flex;
+  }
+  
+  .images img {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 10px;
+  }
+  
+  .details {
+    width: 70%;
+    margin: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+  }
+  
+  .about-villa {
+    margin-bottom: 20px;
+    text-align: start;
+  }
+  .about-villa p{
+    text-align: start;
+    margin: 15px 0px;
+    font-size: 16px;
+  }
+  
+  .enquiry-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .enquiry-form input{
+    padding: 7px;
+    width: 250px;
+  }
+  .enquiry-form label {
+    margin-bottom: 10px;
+  }
+  
+  .enquiry-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .enquiry-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .offers p{
+    margin: 15px 0px;
+  }
+.offers{
+border: 1px solid rgb(95, 184, 189);
+padding: 40px;
+box-shadow: 3px 3px 8px black;
+}
+
+.back{
+  text-decoration: none;
+  color: #007bff;
+  margin: 20px 50px;
+  background-color: orange;
+  padding: 7px 20px;
+  width: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+

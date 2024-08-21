@@ -1,6 +1,74 @@
 .service{
+    padding-top: 110px;
+}
+.service-item{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    gap: 100px;
+    width: 80%;
+    margin: 20px 100px;
+    background-color: #6888a0;
+    border-radius: 25px;
 }
+.service-item img{
+    width: 650px;
+    height: 400px;
+    border-radius: 20px 0px 0px 20px;
+}
+.service-item h1{
+    color: aliceblue;
+    font-size: 39px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 50px;
+    cursor: pointer;
+    text-align: start;
+}
+
+.service-list1 img{
+    width: 330px;
+    height: 250px;
+}
+.service-list img:hover{
+    box-shadow: 3px 3px 10px black;
+}
+
+.hr1{
+    width: 50%;
+    height: 4px;
+    justify-content: center;
+    margin: 12px auto;
+    background-color: orange;
+  }
+
+  .villa-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 50px;
+  }
+
+  .villa-item1 img{
+    width: 400px;
+  }
+  .villa-item1{
+    text-align: left;
+  }
+  .villa-item1 p{
+    margin: 13px;
+    padding: 7px;
+    box-shadow: 3px 3px 6px black;
+    cursor: pointer;
+  }
+  .villa-item1 p:hover{
+    transform: scale(1.1);
+  }
+
