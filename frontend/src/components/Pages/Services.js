@@ -1,6 +1,8 @@
 import Fade from "react-reveal"
 import { Link } from 'react-router-dom'
+import chech from "../image/chech.png"
 import dog from "../image/dog.png"
+import garden from "../image/garden.png"
 import home9 from "../image/home9.png"
 import service1 from "../image/service1.png"
 import service2 from "../image/service2.png"
@@ -29,6 +31,7 @@ const Services = () => {
         <p>Weekdays(Mon-Thu) 2-4 Guest Per-Day</p>
         <p>Starts Form</p>
         <p>₹5500/ +GST Per Day</p>
+        <Link to="/villa-details"><button style={{margin:"10px"}}>See More</button></Link>
       </div>
       <div className='service-list1'>
       <Link to="/villa-details">
@@ -37,6 +40,7 @@ const Services = () => {
         <p>Weekdays(Mon-Thu) 2-4 Guest Per-Day</p>
         <p>Starts Form</p>
         <p>₹5500/ +GST Per Day</p>
+        <Link to="/villa-details"><button style={{margin:"10px"}}>See More</button></Link>
       </div>
       <div className='service-list1'>
       <Link to="/villa-details">
@@ -45,6 +49,7 @@ const Services = () => {
         <p>Weekdays(Mon-Thu) 2-4 Guest Per-Day</p>
         <p>Starts Form</p>
         <p>₹5500/ +GST Per Day</p>
+        <Link to="/villa-details"><button style={{margin:"10px"}}>See More</button></Link>
       </div>
       <div className='service-list1'>
       <Link to="/villa-details">
@@ -53,6 +58,7 @@ const Services = () => {
         <p>Weekdays(Mon-Thu) 2-4 Guest Per-Day</p>
         <p>Starts Form</p>
         <p>₹5500/ +GSTPer Day</p>
+        <Link to="/villa-details"><button style={{margin:"10px"}}>See More</button></Link>
       </div>
       <div className='service-list1'>
       <Link to="/villa-details">
@@ -61,6 +67,7 @@ const Services = () => {
         <p>Weekdays(Mon-Thu) 2-4 Guest Per-Day</p>
         <p>Starts Form</p>
         <p>₹5500/ +GST Per Day</p>
+        <Link to="/villa-details"><button style={{margin:"10px"}}>See More</button></Link>
       </div>
       <div className='service-list1'>
       <Link to="/villa-details">
@@ -69,6 +76,7 @@ const Services = () => {
         <p>Weekdays(Mon-Thu) 2-4 Guest Per-Day</p>
         <p>Starts Form</p>
         <p>₹5500/ +GST Per Day</p>
+        <Link to="/villa-details"><button style={{margin:"10px"}}>See More</button></Link>
       </div>
     </div>
     <div className='villa-rates'>
@@ -96,6 +104,50 @@ const Services = () => {
               Xmas, New Year, or special holidays.</p>
         </div>
       </Fade>
+    </div>
+    <hr className="hr1" />
+    <div className="info-container">
+      <div className="location-header">
+        <h2>Tamhini Ghat, Gold Valley, Sanaswadi, Maharashtra 402120</h2>
+      </div>
+      <div className="info-title">
+        <h1>INFORMATION</h1>
+      </div>
+      <Fade left>
+      <div className="check-in-section">
+        <div className="check-in-text">
+          <h3>Check-In</h3>
+          <p className="location-text">
+            <strong>Location:</strong> Tamhini Ghat, Gold Valley, Sanaswadi, Maharashtra 402120
+          </p>
+          <div className="check-in">
+          <p>Check in time .. 11 am.<br />
+             Check out at .. 10 am.<br />
+             Late check-out, if available, will be permitted at an extra charge.
+          </p>
+          </div>
+        </div>
+        <div className="check-in-image">
+          <img src={chech} alt="Check-In Location" />
+        </div>
+      </div> 
+      </Fade>
+      <Fade right>
+      <hr className="divider" />
+      <div className="check-in-process-section">
+        <div className="check-in-process-image">
+          <img src={garden} alt="Property Image" />
+        </div>
+        <div className="check-in-process-text">
+          <h3>Check-in Process</h3>
+          <p>
+            "Dear Guests, we're excited to share that a convenient self check-in option 
+            is available at our property, providing you with a seamless and efficient arrival 
+            experience. Enjoy the flexibility and ease of checking in at your convenience."
+          </p>
+        </div>
+      </div>
+    </Fade>
     </div>
     </>
   )

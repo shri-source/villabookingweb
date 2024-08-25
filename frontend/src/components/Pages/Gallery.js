@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Fade from "react-reveal"
 import home1 from "../image/home1.png"
 import home10 from "../image/home10.png"
 import home11 from "../image/home11.png"
@@ -53,25 +54,30 @@ const Gallery = () => {
         <img src={images[currentIndex]} alt='' className='galery-img'/>
         <button className='right-arrow' onClick={nextImage}>&#8250;</button>
       </div>
-
+      <Fade bottom>
       <div className='galery-1'>
         <img src={home1} alt='' onClick={() => openImage(home1)} />
         <img src={home2} alt='' onClick={() => openImage(home2)} />
         <img src={home3} alt='' onClick={() => openImage(home3)} />
         <img src={home4} alt='' onClick={() => openImage(home4)} />
       </div>
+      </Fade>
+      <Fade bottom>
       <div className='galery-2'>
         <img src={home6} alt='' onClick={() => openImage(home6)} />
         <img src={home7} alt='' onClick={() => openImage(home7)} />
         <img src={home8} alt='' onClick={() => openImage(home8)} />
         <img src={home9} alt='' onClick={() => openImage(home9)} />
       </div>
+      </Fade>
+      <Fade bottom>
       <div className='galery-3'>
         <img src={home10} alt='' onClick={() => openImage(home10)} />
         <img src={home11} alt='' onClick={() => openImage(home11)} />
         <img src={home12} alt='' onClick={() => openImage(home12)} />
         <img src={home13} alt='' onClick={() => openImage(home13)} />
       </div>
+      </Fade>
 
       {/* Modal for full-width image */}
       {selectedImage && (

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import service1 from "../image/service1.png";
 import service2 from "../image/service2.png";
+import service4 from "../image/service4.png";
 import "../style/VillaDetails.css";
 
 function VillaDetails() {
@@ -10,7 +11,7 @@ function VillaDetails() {
     <div className="villa-details">
       <div className="images">
         <img src={service1} alt="" />
-        <img src={service2} alt="" />
+        <img src={service4} alt="" />
         <img src={service2} alt="" />
       </div>
       <Link to="/services" className="back">Back to Home</Link>

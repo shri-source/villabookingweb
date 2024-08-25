@@ -35,6 +35,7 @@
 .service-list1 img{
     width: 330px;
     height: 250px;
+    border-radius: 10px;
 }
 .service-list img:hover{
     box-shadow: 3px 3px 10px black;
@@ -72,3 +73,90 @@
     transform: scale(1.1);
   }
 
+
+  /* Information.css */
+
+.info-container {
+  font-family: 'Georgia', serif;
+  color: #4B2E2E;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.location-header h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.info-title h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #6D4C41;
+}
+
+.check-in-section, .check-in-process-section {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.check-in-text, .check-in-process-text {
+  flex: 1;
+  padding: 20px;
+}
+.check-in-text p{
+  font-size: 17px;
+}
+.check-in{
+  margin-top: 60px;
+}
+.check-in p{
+line-height: 29px;
+  font-size: 23px;
+}
+.check-in-text h3{
+  font-size: 38px;
+  color: #6e4d10;
+}
+
+.check-in-image img{
+  width: 100%;
+  max-width: 300px;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.divider {
+  margin: 40px 0;
+  border: 1px solid #B0A7A1;
+}
+
+.location-text {
+  margin: 10px 0;
+  color: #3B3B3B;
+}
+
+.check-in-process-image {
+  display: flex;
+  gap: 15px;
+  flex: 1;
+}
+
+.check-in-process-image img{
+  width: 300px;
+}
+.check-in-process-text h3{
+font-size: 39px;
+color: #3b2a0b;
+margin: 15px 0px;
+} 
+
+.check-in-process-text p{
+  font-size: 17px;
+  line-height: 29px;
+  text-align: left;
+}

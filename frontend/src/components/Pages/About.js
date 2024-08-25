@@ -87,11 +87,10 @@ const About = () => {
         </Zoom>
         <Fade bottom>
           <p>
-            Founded in 2018 by the Entrepreneurial Fantastic Four - Husain
-            Khatumdi, Sohail Mirchandani, Varun Arora & Zishan Khan, with a
+            Founded in 2019 by the Entrepreneurial Fantastic Four - Swapnil D, with a
             vision to tailor the needs of the holiday goers on experiencing a
-            cozy & private stay of a home away from home. EKOSTAY now offers
-            guests a selection of over 100+ villas spread across 12 cities.
+            cozy & private stay of a home away from home. SWARU now offers
+            guests a selection of over 100+ Happy Customer across 30 cities.
           </p>
         </Fade>
       </div>
